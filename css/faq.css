@@ -1,0 +1,253 @@
+/*------------------------------faq section------------------------------*/
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    padding: 100px 30px;
+    background: url("../image/faq_bg.jpg") center center / cover no-repeat;
+}
+
+.faq-icon {
+    width: 65px;
+}
+
+.faq .section-title {
+    margin-top: 20px;
+}
+
+.faq .inscript {
+    margin-top: 14px;
+    color: #598A97;
+}
+
+.questions {
+    margin: 80px auto 0;
+    max-width: 807px;
+    display: grid;
+    grid-gap: 12px;
+}
+
+.question {
+    padding: 16px 30px 16px 24px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.question.open {
+    box-shadow: 0 25px 80px -30px rgba(0, 1, 18, 0.2);
+}
+
+.q_collapse {
+    display: grid;
+    grid-template-columns: 1fr 18px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.q_header {
+    display: grid;
+    grid-template-columns: 39px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.count {
+    width: 39px;
+    height: 39px;
+    background: #ECEFF1;
+    border: 2px solid #6FA8B6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count span {
+    font: 600 14px 'Inter', sans-serif;
+    letter-spacing: -0.01em;
+}
+
+.q_header h6 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #242B31;
+}
+
+.expand-more {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.expand-more svg {
+    width: 18px;
+}
+
+.open .expand-more {
+    transform: rotateZ(180deg);
+}
+
+.expand-more path {
+    transition: all .3s ease;
+    fill: #B3B6BC;
+}
+
+.open path {
+    fill: #303542;
+}
+
+.description {
+    padding: 0 44px 0 59px;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.description .descript-14 {
+    color: #595D63;
+}
+
+/*            Tablet              */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .faq {
+        margin-top: 100px;
+        padding: 71px 30px;
+    }
+
+    .faq-icon {
+        width: 46px;
+    }
+
+    .faq .section-title {
+        margin-top: 14px;
+    }
+
+    .faq .inscript {
+        margin-top: 10px;
+    }
+
+    .questions {
+        margin-top: 57px;
+        max-width: 572px;
+        gap: 11px;
+    }
+
+    .question {
+        padding: 14px 17px;
+        border-radius: 6px;
+    }
+
+    .q_collapse {
+        grid-template-columns: 1fr 30px;
+    }
+
+    .q_header {
+        grid-template-columns: 28px 1fr;
+    }
+
+    .count {
+        width: 28px;
+        height: 28px;
+        border-width: 1px;
+    }
+
+    .count span {
+        font-weight: 700;
+        font-size: 10px;
+        letter-spacing: -0.02em;
+    }
+
+    .q_header h6 {
+        font-size: 11px;
+    }
+
+    .expand-more {
+        padding: 9px;
+    }
+
+    .expand-more svg {
+        width: 12px;
+    }
+
+    .description {
+        padding: 0 42px;
+    }
+
+    .open .description {
+        padding-top: 3px;
+    }
+}
+
+/*            Phone              */
+@media (max-width: 767.98px) {
+    .faq {
+        margin-top: 80px;
+        padding: 40px 16px;
+    }
+
+    .faq-icon {
+        width: 28px;
+    }
+
+    .faq .section-title {
+        margin-top: 15px;
+    }
+
+    .faq .inscript {
+        margin-top: 10px;
+    }
+
+    .questions {
+        margin-top: 36px;
+        max-width: 572px;
+        gap: 12px;
+    }
+
+    .question {
+        padding: 12px 12px 12px 10px;
+        border-radius: 4px;
+    }
+
+    .q_collapse {
+        grid-template-columns: 1fr 30px;
+    }
+
+    .q_header {
+        grid-template-columns: 25px 1fr;
+    }
+
+    .count {
+        width: 25px;
+        height: 25px;
+        border-width: 1px;
+    }
+
+    .count span {
+        font-size: 12px;
+        line-height: 0.83;
+        letter-spacing: -0.02em;
+    }
+
+    .q_header h6 {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    .expand-more {
+        padding: 5px;
+    }
+
+    .expand-more svg {
+        width: 20px;
+    }
+
+    .description {
+        padding: 0 0 0 34px;
+    }
+
+    .open .description {
+        padding-top: 5px;
+        padding-bottom: 6px;
+    }
+}

@@ -1,0 +1,209 @@
+/*------------------------------our story section------------------------------*/
+.our-story {
+    margin-top: 126px;
+}
+
+.section-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.our-story-wrapper {
+    max-width: 960px;
+    gap: 150px;
+
+}
+
+.image-container,
+.fill-img,
+.content-container {
+    width: 100%;
+}
+
+/*------------------------------we want section------------------------------*/
+.we-want {
+    margin-top: 132px;
+}
+
+.we-want-wrapper {
+    max-width: 1028px;
+    gap: 128px;
+}
+
+/*------------------------------our process section------------------------------*/
+.our-process {
+    margin-top: 140px;
+}
+
+.our-process-wrapper {
+    max-width: 1166px;
+    gap: 100px;
+}
+
+/*            Phone              */
+@media (max-width: 767.98px) {
+    .our-story {
+        margin-top: 68px;
+    }
+
+    .section-wrapper {
+        flex-direction: column;
+    }
+
+    .our-story-wrapper {
+        gap: 20px;
+    }
+
+    .we-want {
+        margin-top: 74px;
+    }
+
+    .we-want-wrapper {
+        flex-direction: column-reverse;
+        gap: 31px;
+    }
+
+    .our-process {
+        margin-top: 50px;
+    }
+
+    .our-process-wrapper {
+        gap: 36px;
+    }
+}
+
+/*------------------------------our team section------------------------------*/
+.our-team {
+    margin-top: 93px;
+}
+
+.our-team .inscript {
+    color: #598A97;
+}
+
+.our-team .section-title {
+    margin-top: 14px;
+}
+
+.our-team .descript-reg {
+    text-align: center;
+}
+
+.our-team-container {
+    width: 100%;
+    margin: 80px auto 0;
+    max-width: 1102px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.person {
+    width: 100%;
+    max-width: 246px;
+    display: flex;
+    flex-direction: column;
+}
+
+.person img {
+    width: 100%;
+}
+
+.person-name {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.position {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    color: #77797C;
+}
+
+/*            Phone              */
+@media (max-width: 767.98px) {
+    .our-team {
+        margin-top: 78px;
+    }
+
+    .our-team .section-title {
+        margin-top: 6px;
+    }
+
+    .our-team-container {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .person-name {
+        margin-top: 28px;
+    }
+
+    .position {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+}
+
+/*------------------------------trusted by section------------------------------*/
+.trusted-by {
+    margin-top: 140px;
+    position: relative;
+}
+
+.trusted-by-wrapper {
+    margin: 0 35px 0 75px;
+}
+
+.trusted-img {
+    width: 100%;
+}
+
+.trusted-small-img {
+    display: none;
+}
+
+.trusted-content {
+    padding: 0 20px;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*            Phone              */
+@media (max-width: 767.98px) {
+    .trusted-by {
+        margin-top: 78px;
+    }
+
+    .trusted-by-wrapper {
+        margin: 0;
+    }
+
+    .trusted-content {
+        width: 100%;
+        top: 33px;
+    }
+}
+
+@media (max-width: 425px) {
+    .trusted-img {
+        display: none;
+    }
+
+    .trusted-small-img {
+        display: block;
+        width: 100%;
+    }
+}

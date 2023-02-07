@@ -1,0 +1,148 @@
+.form-wrapper{
+    max-width: 950px;
+    width: 100%;
+    margin: 80px auto 0;
+    border: 6px solid #E3F2F3;
+    background-color: #fff;
+    box-shadow: 0 97.4px 250px 0 rgba(0, 0, 0, 0.04);
+    padding: 60px 62px 60px 56px;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.container-whole-line,
+.submitButton {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.input-control input,
+.input-control textarea {
+    border: none;
+    border-bottom: 1.5px solid #EEEFEF;
+    transition: all .15s linear;
+}
+
+.input-control input,
+.input-control textarea {
+    color: #9A9EA2;
+}
+
+.input-control input {
+    padding: 16px 0 8px;
+}
+
+.input-control select,
+.input-control textarea {
+    margin-top: 16px;
+}
+
+.input-control select {
+    color: var(--black);
+    background: #F3F3F3;
+    border: none;
+    padding: 9px 16px;
+}
+
+.input-control option {
+    color: var(--black);
+    background-color: #FFFFFF;
+}
+
+.input-control input:focus,
+.input-control textarea:focus,
+.input-control select:focus {
+    outline: 0;
+    border-bottom: 2px solid #598A97;
+}
+
+.input-control.error input {
+    border-color: #CE6A6A;
+}
+
+.input-control .errorMessage {
+    font-size: 12px;
+    color: #CE3E3E;
+}
+
+.submitButton {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    padding: 18px;
+    background: #6ACE80;
+    border: none;
+    box-shadow: 0 15px 50px -21px rgba(89, 173, 108, 0.6);
+}
+
+form:invalid .submitButton {
+    background: #ECEFF1;
+    color: #B9B9B9;
+    pointer-events: none;
+}
+
+/*            Phone              */
+@media (max-width: 767.98px) {
+    .form-wrapper{
+        margin-top: 32px;
+        border-width: 2px;
+        box-shadow: 0 39.8204px 102.208px rgba(0, 0, 0, 0.04);
+        padding: 24px 20px;
+    }
+    .form {
+        grid-gap: 20px;
+    }
+
+    .page .input-control {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .input-control label {
+        font-size: 14px;
+        line-height: 1.57;
+    }
+
+    .input-control input {
+        padding: 12px 0 6px;
+    }
+
+    .input-control select {
+        margin-top: 12px;
+        padding: 9px 14px;
+    }
+
+    .input-control textarea {
+        margin-top: 12px;
+    }
+
+    .input-control .errorMessage {
+        font-size: 10px;
+    }
+
+    .submitButton {
+        font-size: 14px;
+        line-height: 1.29;
+        padding: 11px;
+    }
+}
